@@ -3,6 +3,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "ClassFunction.h"
 
 QT_BEGIN_NAMESPACE
 // Определение UI-класса наперёд, чтобы визуальное редактирование не приводило
@@ -27,11 +28,16 @@ public:
 private slots:
     void on_pushButton_calc_clicked();
 
+    void on_action_author_triggered();
+
+    void on_action_clear_triggered();
+
 private:
      // Указатель на UI (для него в Qt есть ещё одна программа, UIC)
     Ui::MainWindow *ui;
      // Поля
-    double x,y,z;
-};
+    /// double x,y,z;
+    Function p;
+ };
 // Защита от повторного включения
 #endif // MAINWINDOW_H
