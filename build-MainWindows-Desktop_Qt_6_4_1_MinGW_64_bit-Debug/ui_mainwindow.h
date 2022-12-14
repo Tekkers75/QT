@@ -245,6 +245,8 @@ public:
         pushButton_calc->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\321\201\321\207\320\270\321\202\320\260\321\202\321\214", nullptr));
         label_ResultA->setText(QCoreApplication::translate("MainWindow", "\320\240\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202 A", nullptr));
         label_ResultB->setText(QCoreApplication::translate("MainWindow", "\320\240\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202 B", nullptr));
+        plainTextEdit_report->setPlainText(QCoreApplication::translate("MainWindow", "\320\241\320\264\320\265\320\273\320\260\321\202\321\214 \320\277\321\200\320\276\320\262\320\265\321\200\320\272\321\203, \321\201\320\264\320\265\320\273\320\260\321\202\321\214 \320\276\320\261\321\211\320\270\320\271 \321\201\320\265\321\202\321\202\320\265\321\200\n"
+"", nullptr));
         menu->setTitle(QCoreApplication::translate("MainWindow", "\320\237\321\200\320\260\320\262\320\272\320\260", nullptr));
         menu_2->setTitle(QCoreApplication::translate("MainWindow", "\320\241\320\277\321\200\320\260\320\262\320\272\320\260", nullptr));
     } // retranslateUi

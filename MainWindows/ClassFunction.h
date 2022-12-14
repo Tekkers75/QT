@@ -1,24 +1,32 @@
 #ifndef CLASSFUNCTION_H
 #define CLASSFUNCTION_H
+#include <stdexcept>
 
 
 
-
-
+/// https://ivtipm.github.io/Programming/Glava01/index01.htm#z11 (ж)
+/// Считает значения по формуле из задачника
 class Function
 {
 private:
+    //
     double x,y,z;
+
+    //
+    double A;
+    double B;
+
 public:
     Function();
-    void set_x(double x1);
-    void set_y(double y1);
-    void set_z(double z1);
-    double get_x();
-    double get_y();
-    double get_z();
-    double A(double x,double y,double z);
-    double B(double x);
+    // SET
+    void set_xyz(double x1,double y1,double z1);
+
+    double get_x() const; // добавил константы
+    double get_y() const;
+    double get_z() const;
+
+    double calc_A();
+    double calc_B();
 };
 
 
