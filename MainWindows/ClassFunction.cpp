@@ -1,11 +1,13 @@
 #include "ClassFunction.h"
 #include <cmath>
 
+/// Конструктор без параметров
 Function::Function()
 {
 
 }
 
+/// Сеттер
 void Function::set_xyz(double x1,double y1, double z1)
 {
     if ((x1 || z1) == 0 ) throw std::invalid_argument("x or z != 0");
@@ -14,6 +16,7 @@ void Function::set_xyz(double x1,double y1, double z1)
     z=z1;
 }
 
+/// Геттеры
 double Function::get_x() const
 {
     return x;
@@ -29,6 +32,7 @@ double Function::get_z() const
     return z;
 }
 
+/// Методы для расчета функций
 double Function::calc_A()
 {
    A = log(std::abs((y-sqrt(std::abs(x)))*(x-y/(z+x*x/4))));
